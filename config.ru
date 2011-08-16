@@ -2,7 +2,7 @@ require 'rubygems'
 require 'yard'
 require 'fileutils'
 
-FileUtils.rm 'public.html'
+FileUtils.rm_f 'public.html'
 
 libraries = {}
 gems = Gem.source_index.find_name('').each do |spec|
