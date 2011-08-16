@@ -1,3 +1,4 @@
-h1. Local On Demand YARD Docs for Rubygems
+Local On Demand YARD Docs for Rubygems
+=======================================
 
 This is a simple application that makes it easy to have local YARD docs for all installed Rubygems, created on demand.
