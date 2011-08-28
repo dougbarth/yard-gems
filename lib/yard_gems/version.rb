@@ -1,0 +1,3 @@
+module YardGems
+  VERSION = "0.0.1"
+end

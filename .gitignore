@@ -1,3 +1,8 @@
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+
 public.html
 public
 tmp

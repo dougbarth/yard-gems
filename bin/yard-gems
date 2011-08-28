@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require "rubygems" # ruby1.9 doesn't "require" it though
+require "thor"
+
+class YardGems < Thor
+  desc "install PATH", "Installs a YARD gems application the supplied path"
+  def install(path)
+    puts "I will install it here: #{path}"
+  end
+end
+
+YardGems.start
+
