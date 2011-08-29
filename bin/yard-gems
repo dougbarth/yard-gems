@@ -1,11 +1,14 @@
 #!/usr/bin/env ruby
 require "rubygems" # ruby1.9 doesn't "require" it though
 require "thor"
+require 'fileutils'
 
 class YardGems < Thor
   desc "install PATH", "Installs a YARD gems application the supplied path"
   def install(path)
     puts "I will install it here: #{path}"
+    FileUtils.mkdir_p(path + '/public')
+    FileUtils.cp(File.expand_path("../../config.ru", __FILE__), path + "/config.ru")
   end
 end
 
