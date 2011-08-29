@@ -10,6 +10,12 @@ class YardGems < Thor
     FileUtils.mkdir_p(path + '/public')
     FileUtils.cp(File.expand_path("../../config.ru", __FILE__), path + "/config.ru")
   end
+
+  desc "pow", "Installs the yard gems application to ~/.pow"
+  def pow(path="~/.pow")
+    path = File.join(File.expand_path(path), "yard")
+    install(path)
+  end
 end
 
 YardGems.start
