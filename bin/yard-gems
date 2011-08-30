@@ -8,6 +8,7 @@ class YardGems < Thor
   def install(path)
     puts "I will install it here: #{path}"
     FileUtils.mkdir_p(path + '/public')
+    FileUtils.mkdir_p(path + '/tmp')
     FileUtils.cp(File.expand_path("../../config.ru", __FILE__), path + "/config.ru")
   end
 
